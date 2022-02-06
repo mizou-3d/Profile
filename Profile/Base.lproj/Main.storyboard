@@ -28,12 +28,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="945-x5-3q3">
-                                <rect key="frame" x="152" y="793" width="110" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="945-x5-3q3">
+                                <rect key="frame" x="152" y="799" width="110" height="31"/>
                                 <color key="backgroundColor" red="0.0" green="0.70588235294117641" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="10" maxX="20" maxY="10"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="プロフィール"/>
+                                <connections>
+                                    <action selector="tapButton1" destination="BYZ-38-t0r" eventType="touchUpInside" id="ayd-LU-oGs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,10 +48,15 @@
                             <constraint firstItem="945-x5-3q3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QZn-S1-GcK"/>
                             <constraint firstItem="m8n-Oy-rCf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S7M-PT-Jar"/>
                             <constraint firstItem="dGL-LW-G41" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ftg-8c-2jv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="945-x5-3q3" secondAttribute="bottom" constant="32" id="gUg-Bt-Qxb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dGL-LW-G41" secondAttribute="trailing" constant="16" id="hNg-3G-ZSr"/>
                             <constraint firstItem="m8n-Oy-rCf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pbo-WL-Ndb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileCommentLabel" destination="dGL-LW-G41" id="gSx-0C-n2D"/>
+                        <outlet property="profileImageView" destination="m8n-Oy-rCf" id="ERD-ba-hrQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
